@@ -15,3 +15,10 @@ export const getHyperLinkUrl = (buildEnv: HYPERLINK_BUILD_ENV_TYPE): string => {
         return "hyperlinkwallet.com";
     }
   };
+  export function getCloseButtonUrl(buildEnv: HYPERLINK_BUILD_ENV_TYPE): string {
+    const logoUrl = new URL(
+      "adapter-popup-close-icon.svg",
+      getHyperLinkUrl(buildEnv)
+    );
+    return logoUrl.toString();
+  }
