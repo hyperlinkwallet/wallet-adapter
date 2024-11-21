@@ -7,15 +7,15 @@ export const getHyperLinkUrl = (buildEnv: HYPERLINK_BUILD_ENV_TYPE): string => {
   //TODO: Add the correct URL
   switch (buildEnv) {
     case "production":
-      return "hyperlinkwallet.com";
+      return "http://localhost:3000";
     case "staging":
-      return "hyperlinkwallet.com";
+      return "http://localhost:3000";
     case "development":
-      return "hyperlinkwallet.com";
+      return "http://localhost:3000";
     case "adapter":
-      return "hyperlinkwallet.com";
+      return "http://localhost:3000";
     case "local":
-      return "hyperlinkwallet.com";
+      return "http://localhost:3000";
   }
 };
 export function getCloseButtonUrl(buildEnv: HYPERLINK_BUILD_ENV_TYPE): string {

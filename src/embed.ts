@@ -832,6 +832,7 @@ export class HyperLinkEmbed extends EventEmitter<HyperLinkEmbedEvents> {
 
   private popupTypeMessage = (popupType: PopupType) => {
     const baseUrl = getHyperLinkUrl(this.buildEnv);
+    console.log("baseUrl", baseUrl);
     switch (popupType) {
       case PopupType.MESSAGE:
         return {
